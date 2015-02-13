@@ -1,0 +1,39 @@
+<style type="text/css">
+  .features {
+    list-style-type: disc;
+    margin-bottom:30px;
+  }
+  .features li {
+    text-align: left;
+    margin: 18px 40px; }
+</style>
+<ion-view view-title="Home">
+  <ion-content class="padding">
+    <current-state-template-details ng-init="templateIsShared=true; currentTemplatePath='routes/home/index/home-index.template.html';"></current-state-template-details>
+    <h2>tl;dr</h2>
+    <a ui-sref="^.^.about">Go to the about page</a> to see all of the navigation options available in this app.
+    <h2>Introduction</h2>
+    <p>In this app we attempt to show...</p>
+      <ul class="features">
+        <li>how to achieve a relatively <strong>complex set of states</strong> in our application while keeping the app well-organized.</li>
+        <li>how to switch states <strong>absolutely or relatively</strong> in Ionic.</li>
+        <li>how to <strong>either share or not share templates</strong> irregardless of our tab navigation context (whether or not the current state is loaded inside or outside of Ionic's tabs interface).</li>
+        <li>how to structure states so that <strong>navigation can happen properly</strong> without needing to know if we're inside a tab or not.</li>
+        <li>how to use <strong>sub-sub states</strong> like tabs.home.index.</li>
+        <li>and lastly, how to sanely use Angular's flat, string based module system with <strong>jspm/systemjs's ES6 module support</strong>.</li>
+      </ul>
+    <h2>Ionic's special sauce</h2>
+    <p>Ionic takes care of some subtle but important things for us.</p>
+    <p>Note that if we're navigating into the tab interface from outside of it or if we're navigating internally between tabs then Ionic does not display the back button because it treats each tab section as a separate navigation tree in our app.</p>
+    <p>If instead, we're outside of tabs, we'll get the back button because links are treated as being inside the same navigation tree.</p>
+    <h2>Built using</h2>
+    <p>In this very simple application we're using:</p>
+    <ul class="features">
+      <li>ES6 modules</li>
+      <li>jspm</li>
+      <li>SystemJS</li>
+      <li>Angular 1.x</li>
+      <li>Ionic 1.0.0 beta 14.</li>
+    </ul>
+  </ion-content>
+</ion-view>
