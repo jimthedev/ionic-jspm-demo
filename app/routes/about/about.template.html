@@ -1,0 +1,8 @@
+<ion-view view-title="About (outside of tabs)">
+    <ion-content ng-controller="AboutCtrl as about" class="padding">
+        <current-state-template-details ng-init="templateIsShared=false; currentTemplatePath='routes/about/about.template.html';"></current-state-template-details>
+            <h2>About all states</h2>
+        <navigation></navigation>
+        <div ng-include="'/routes/about/about.navigation.template.html'"></div>
+    </ion-content>
+</ion-view>

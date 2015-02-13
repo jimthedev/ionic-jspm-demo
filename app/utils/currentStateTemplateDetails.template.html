@@ -1,0 +1,28 @@
+<style type="text/css">
+    .item.item-divider, .item.item-body .row {
+        font-size:12px;
+    }
+</style>
+<div class="list card">
+    <div class="item item-divider">
+        Current state and template info
+    </div>
+    <div ng-controller="CurrentStateTemplateDetailsController as pageDetails" class="item item-body">
+        <div class="row">
+            <div class="col"><strong>current state name</strong></div>
+            <div class="col">{{pageDetails.currentState}}</div>
+        </div>
+        <div class="row">
+            <div class="col"><strong>you are inside tabs</strong></div>
+            <div class="col">{{pageDetails.isStateInsideTabs}}</div>
+        </div>
+        <div class="row">
+            <div class="col"><strong>template url</strong></div>
+            <div class="col">{{currentTemplatePath}}</div>
+        </div>
+        <div class="row">
+            <div class="col"><strong>template is shared in &amp; outside of tabs</strong></div>
+            <div class="col">{{templateIsShared}}</div>
+        </div>
+    </div>
+</div>
