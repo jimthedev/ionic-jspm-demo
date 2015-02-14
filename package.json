@@ -1,6 +1,5 @@
 {
   "jspm": {
-    "name": "ionic-jspm-demo",
     "directories": {
       "baseURL": "app"
     },
@@ -9,6 +8,7 @@
       "angular-animate": "^1.3.11",
       "angular-sanitize": "^1.3.11",
       "angular-ui-router": "^0.2.13",
+      "font-awesome": "^4.3.0",
       "ionic": "1.0.0-beta.14",
       "ionicons": "github:driftyco/ionicons@^2.0.1",
       "text": "^0.0.2"

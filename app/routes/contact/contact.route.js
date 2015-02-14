@@ -3,6 +3,9 @@ import 'angular-ui-router';
 
 import sharedContactTemplate from './contact.template.html!text';
 
+// Vendor CSS dependencies
+import 'font-awesome/css/font-awesome.min.css!css';
+
 export var contactRouteModule = angular.module('appModule.contactRouteModule', [
   'ui.router'
 ]).config([
